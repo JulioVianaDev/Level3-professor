@@ -12,6 +12,9 @@ function Notes() {
   const fecharModal=()=>{
     setModal(false)
   }
+  const deleteNote=(id)=>{
+    setNotes(notes.filter(n=>n.id !==id))
+  }
   return (
     <div id='notes'>
       <button onClick={()=>setModal(true)}>Criar Anotação</button>
@@ -19,6 +22,7 @@ function Notes() {
       { 
         modal ?<FormNotes addNote={addNote} fecharModal={fecharModal}/>
         :<AllNotes
+        deleteNote={deleteNote}
         notes={notes}/>
       }
     </div>
