@@ -38,7 +38,9 @@ function FormNotes(props) {
           value={note.date} 
         />
         <button type='submit'>Enviar</button>
+        <button onClick={()=>props.fecharModal()}>Cancelar</button>
       </form>
+      
     </div>
   )
 }
