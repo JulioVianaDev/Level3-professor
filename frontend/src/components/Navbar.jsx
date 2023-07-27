@@ -1,27 +1,15 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import "./Navbar.css"
+import Navlink from './UI/Navlink'
 
 function Navbar() {
   return (
     <nav>
     <div>
-        <NavLink
-            to='/notes'
-            className={({isActive})=>
-                isActive ? 'link-clicado' : ''
-            }
-        >
-            Anotações
-        </NavLink>
-        <NavLink
-            to='/home'
-            className={({isActive})=>
-                isActive ? 'link-clicado' : ''
-            }
-        >
-            Criar Conta
-        </NavLink>
+        <Navlink texto="Anotações"  path="/notes"/>
+        <Navlink texto="Home"  path="/"/>
+        
     </div>
     <div>
 
