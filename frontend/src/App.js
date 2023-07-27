@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div>
-      <h1>Olá tudo bem com voce?</h1>
+      <h1>Segunda aula</h1>
       <p>Eu posso ter html dentro de uma função</p>
       <h2>O valor da variavel é: {variavel}</h2>
       <button onClick={alterarValor}>Clicar para alterar a  variavel</button>
