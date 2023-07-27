@@ -15,10 +15,6 @@ function Notes() {
   const deleteNote=(id)=>{
     setNotes(notes.filter(n=>n.id !==id))
   }
-  const editNote = (id,note)=>{
-    setNotes(notes.map(n => (n.id === id ? note : n)));
-  }
-
   return (
     <div id='notes'>
       <button onClick={()=>setFormMode(true)}>Criar Anotação</button>
@@ -28,7 +24,6 @@ function Notes() {
         :<AllNotes
           deleteNote={deleteNote}
           notes={notes}
-          editNote={editNote}
         />
       }
     </div>
