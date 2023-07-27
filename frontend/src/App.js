@@ -18,6 +18,10 @@ function App() {
       <p>Eu posso ter html dentro de uma função</p>
       <h2>O valor da variavel é: {variavel}</h2>
       <button onClick={alterarValor}>Clicar para alterar a  variavel</button>
+      <h1>Também é possivel esconder ou mostrar itens na tela com perguntas javascript</h1>
+      <button onClick={()=>setBoolean(state=>!state)}> Alterar</button>
+      {/* boolean está true? se sim(?) mostre true se não (:) mostre false */}
+      { boolean? "true" : "false" }
     </div>
   );
 }
